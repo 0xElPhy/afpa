@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+
+    margin: auto;
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 75rem;
+
+    padding-top: 1rem;
+    background-color: #eefcff;
+    
+    font-family: system-ui, sans-serif;
+}
+
+header {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 15px;
+
+    background: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+h2 {
+    color: #eefcff;
+}
+
+/* button {
+    color: #eefcff;
+    background-color: #4169E1;
+} */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-size: 22.5px;
+    color: #eefcff;
+}
+
+
+
+.exercices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .exercice {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .exercice:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+
+    .exercice__lien,
+    .exercice__exit,
+    .exercice__numero {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    }
+
+    .exercice__lien::after {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.6);
+        transition: all 0.5s;
+    }
+
+    .exercice__lien:hover::after {
+        width: 100%;
+    }
+
+    .exercice__exit {
+        grid-row: 1/2;
+        justify-self: end;
+    }
+
+    .exercice__numero{
+        grid-row: 2/3;
+        font-size: 30px;
+    }
+
+    .exercice__title {
+        grid-row: 3/4;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .exercice__executer {
+        grid-row: 4/5;
+        align-self: center;
+    }
+
+    .exercice-1 {
+        background: radial-gradient(#18e7d9, #35b9e0);
+    }
+  
+    .exercice-2 {
+        background: radial-gradient(#fbc1cc, #fa99b2);
+    }
+    
+    .exercice-3 {
+        background: radial-gradient(#76b2fe, #b69efe);
+    }
+    
+    .exercice-4 {
+        background: radial-gradient(#60efbc, #58d5c9);
+    }
+    
+    .exercice-5 {
+        background: radial-gradient(#fdbb2d, #d2b50e);
+    }
+
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+}

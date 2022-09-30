@@ -1,0 +1,187 @@
+Exercice 4 – Encore un peu de logique
+--
+--
+Exercice 4.1
+
+Si Tutu <= Toto + 4 ET Tata = "OK" Alors
+	Tutu <- Tutu - 1
+Sinon
+	Tutu <- Tutu + 1
+FinSi
+--
+--
+Exercice 4.2
+
+VARIABLES h, m EN NUMERIQUE
+Début
+	Ecrire "Entrez l'heure, suivi des minutes"
+	Lire h, m
+	m <- m + 1
+	Si m = 60 Alors
+		h <- h + 1
+		m <- 00
+	FinSi
+	Si h = 24 Alors
+		h <- 00
+	Ecrire "Dans une minute, il sera " , h , " heure " , m , " minutes"
+Fin
+--
+--
+Exercice 4.3
+
+VARIABLES h, m, s EN NUMERIQUE
+Début
+	Ecrire "Entrez l'heure, suivi des minutes, puis des secondes"
+	Lire h, m, s
+	s <- s + 1;
+	Si s = 60 Alors
+		m <- m + 1
+		s <- 00
+	FinSi
+	Si m = 60 Alors
+		h <- h + 1
+		m <- 00
+	FinSi
+	Si h = 24 Alors
+		h <- 00
+	Ecrire "Dans une seconde, il sera " , h , " heure " , m , " minutes et " , s , " secondes"
+Fin
+--
+--
+Exercice 4.4
+
+VARIABLES n, p EN NUMERIQUE 
+Début
+	Ecrire "Nombre de photocopies :"
+	Lire n;
+	Si n <= 10 Alors
+		p <- n * 0,1
+	SinonSi n <= 30 Alors
+		p <- n * 0,1 + (n - 10) * 0,09
+	Sinon
+		p <- n * 0,1 + (n - 10) * 0,09 + (n - 30) * 0,08
+	FinSi
+Fin
+--
+--
+Exercice 4.5
+
+VARIABLE a EN ENTIER
+VARIABLE s EN CARACTERE
+VARIABLES A, B EN BOOLEEN
+Début
+	Ecrire "Entrez votre âge :"
+	Lire a;
+	Ecrire "Entrez votre sexe (M/F) :"
+	Lire s;
+	A <- a>20 ET s=M
+	B <- (a <= 18 ET a >= 35) ET s = F
+	Si A OU B Alors
+		Ecrire "Vous êtes imposable"
+	Sinon
+		Ecrire "Vous n'êtes pas imposable"
+	FinSi
+Fin
+--
+--
+Exercice 4.6
+
+Variables a, b, c, d En Numérique
+Variables E, F, G, H En Booleen
+Début
+	Ecrire "Saisir le score de chaque candidat"
+	Lire a, b, c, d
+	E <- a >= 50
+	F <- b >= 50 OU c >= 50 OU d >= 50
+	G <- a >= b ET a >= c ET a >= d
+	H <- a <= 12,5
+	Si E alors
+		Ecrire "Le candidat n°1 est élu"
+	SinonSi F OU H alors
+		Ecrire "Le Candidat n°1 est battu"
+	SinonSi G alors
+		Ecrire "Le candidat n°1 est en ballotage favrorable"
+	Sinon
+		Ecrire "Le candidat n°1 est en ballotage défavrorable"
+	FinSi
+Fin
+--
+--
+Exercice 4.7
+
+Variables age, permis, accident, assurance En Entier
+Variables A, B, C En Booléen
+Début
+	Ecrire "Saisir votre âge"
+	Lire age
+	Ecrire "Nombre d'années de permis"
+	Lire permis
+	Ecrire "Combien d'accident responsable :"
+	Lire accident
+	Ecrire "Combien d'année d'assurance :"
+	Lire assurance
+	A <- age >= 25
+	B <- permis >= 2
+	C <- assurance >= 1
+	Si NON A ET NON B Alors
+		Si accident = 0 Alors
+			tarif <- "rouge"
+		Sinon
+			tarif <- "refusé"
+		FinSi
+	SinonSi (NON A ET B) OU (A ET NON B) Alors
+		Si accident = 0 Alors
+			tarif <- "orange"
+		SinonSi accident = 1 Alors
+			tarif <- "rouge"
+		Sinon
+			tarif <- "refusé"
+		FinSi
+	Sinon A ET B Alors
+		Si accident = 0 Alors
+			tarif <- "vert"
+		SinonSi accident = 1 Alors
+			tarif <- "orange"
+		SinonSi accident = 2 Alors
+			tarif <- "rouge"
+		Sinon
+			tarif <- "refusé"
+		FinSi
+	Si C Alors
+		Si tarif = "vert" Zlors
+			tarif <- "bleu"
+		SinonSi tarif = "orange" Alors
+			tarif <- "vert"
+		SinonSi tarif = "rouge" Alors
+			tarif <- "orange
+		FinSi
+	FinSi
+	Ecrire "Votre tarif est :" , tarif
+Fin
+--
+--
+Exercice 4.8
+
+Variables j, m, a En Entier
+Variables B, L, VD En Booléen
+Début
+	Ecrire "Entrez le jour"
+	Lire j
+	Ecrire "Entrez le mois"
+	Lire m
+	Ecrire "Entrez l'année"
+	Lire a
+	B <- (a mod 4 = 0 ET a mod 100 != 0) OU a mod 400 = 0
+	L <- (m < 08 ET m mod 2 != 0) OU (m >= 08 ET m mod 2 = 0)
+	VD <- (j >= 01 ET j <= 31) ET (m >= 01 ET m <= 12) ET a != 0
+	Si NON VD Alors
+		Ecrire "Date non-valide"
+	SinonSi NON B ET m = 02 ET j = 29 Alors
+		Ecrire "Date non-valide"
+	SinonSi NON L ET j = 31 Alors
+		Ecrire "Date non-valide"
+	Sinon
+		Ecrire "Date valide"
+	FinSi
+Fin
+--

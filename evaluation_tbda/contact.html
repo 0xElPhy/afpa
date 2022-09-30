@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarditou</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/contact.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/img/jarditou_logo.jpg" title="Jarditou" alt="logo" width="400">
+        <h1 class="slogan">Tout le jardin</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Retour Exercices</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="bandeau">
+        <img class="promo" src="./assets/img/promotion.jpg" title="Promotion" alt="promo">
+    </section>
+
+    <section class="container">
+        <aside class="colonne_droite">
+            <p>[COLONNE DROITE]</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis dignissimos quaerat maxime iure, minus quia recusandae. Culpa accusamus sequi qui vel doloremque alias mollitia voluptatibus, excepturi ullam, minus numquam?
+            </p>
+        </aside>
+
+        <section class="formulaire">
+            <h2 id="contact">Contact</h2>
+            <form action="" method="post" id="formulaire_contact">
+                <span>* Ces zones sont obligatoires</span>
+                <fieldset>
+                    <legend class="section_title">Coordonnées</legend>
+                    <section class="part nom">
+                        <label class="label_f" for="nom">Nom* :</label>
+                        <div class="input-legend">
+                            <input class="saisie" type="text" id="nom" autofocus >
+                            <legend class="legend_f nom" id="legende_nom" hidden></legend>
+                        </div>
+                    </section>
+
+                    <section class="part prenom">
+                    <label class="label_f" for="prénom">Prénom* :</label>
+                        <div class="input-legend">
+                            <input class="saisie" id="prenom" type="text" name="prénom">
+                            <legend class="legend_f prenom" id="legende_prenom" hidden></legend>
+                        </div>
+                    </section>
+
+                    <section class="part sexe">
+                        <label class="label_f" for="sexe">Sexe* :</label>
+                            <div class="input-legend">
+                                <input class="saisie radio" id="masculin" name ="sexe" type="radio" value="Masculin">
+                                <label class="label_f" for="sexe1" >Masculin</label>
+
+                                <input class="saisie radio" id="feminin" name ="sexe" type="radio" value="Féminin">
+                                <label class="label_f" for="sexe2">Féminin</label>
+
+                                <legend class="legend_f sexe" id="legende_sexe" hidden></legend>
+                            </div>
+                    </section>
+
+                    <section class="part date">
+                        <label class="label_f" for="date">Date de naissance* :</label>
+                            <div class="input-legend">
+                                <input class="saisie" id="date" type="text" placeholder="jj/mm/aaaa">
+                                <legend class="legend_f date" id="legende_date" hidden></legend>
+                            </div>
+                    </section>
+                    
+                    <section class="part code_postal">
+                        <label class="label_f" for="cp">Code postal* :</label>
+                        <div class="input-legend">
+                            <input class="saisie" id="cp" type="text" name="cp" maxlength="5">
+                            <legend class="legend_f cp" id="legende_cp" hidden></legend>
+                        </div>
+                    </section>
+
+                    <section class="part adresse">                   
+                        <label class="label_f" for="adresse">Adresse :</label>
+                        <div class="input-legend">
+                            <input class="saisie" id="adresse" type="text">
+                            <legend class="legend_f adresse" id="legende_adresse" hidden></legend>
+                        </div>
+                    </section>
+
+                    <section class="part ville">
+                        <label class="label_f" for="ville">Ville :</label>
+                        <div class="input-legend">
+                            <input class="saisie" id="ville" type="text">
+                            <legend class="legend_f ville" id="legende_ville" hidden></legend>
+                        </div>
+                    </section>
+
+                    <section class="part email">
+                        <label class="label_f" for="email">Email* :</label>
+                        <div class="input-legend">
+                            <input class="saisie" id="email" type="text" placeholder="david.lopez@afpa.fr">
+                            <legend class="legend_f email" id="legende_email" hidden></legend>
+                        </div>
+                    </section>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="section_title">Votre demande</legend>
+
+                    <section class="part sujet">
+                        <label class="label_f" for="sujet">Sujet* :</label>
+                        <div class="input-legend">
+                            <select class="selection" id="sujet"> 
+                                <option value="">Veuillez sélectionner un sujet</option>
+                                <option value="Mes commandes">Mes commandes</option>
+                                <option value="Question sur un produit">Question sur un produit</option>
+                                <option value="Réclamation">Réclamation</option>
+                                <option value="Autres">Autres</option>
+                            </select>
+                            <legend class="legend_f" id="legende_sujet"></legend>
+                        </div>
+                    </section>
+
+                    <section class="part question">
+                        <label class="label_f" for="question">Votre question* :</label>
+                        <div class="input-legend">
+                            <textarea class="zonetxt" id="question" rows="3" cols="25"></textarea>
+                            <legend class="legend_f" id="legende_question"></legend>
+                        </div>
+                    </section>
+                </fieldset>
+
+                <section class="part traitement">
+                    <input class="saisie checkbox" type="checkbox" id="accepte" value="accepté" required>
+                    <div class="input-legend">
+                        <label class="accepte" for="accepte">J'accepte le traitement informatique de ce formulaire</label>
+                        <legend class="legend_f" id="legende_accepte"></legend>
+                    </div>
+                </section>
+
+                <section class="boutons">
+                    <button id="envoie" type="button">Envoyer</button>
+                    <button id="annule" role="button" type="reset">Annuler</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#mentions">Mention légales</a></li>
+            <li><a href="#horaires">Horaires</a></li>
+            <li><a href="#plan_site">Plan du site</a></li>
+        </ul>
+    </footer>
+
+    <script src="./assets/javascript/exercice_5.js"></script>
+</body>
+</html>

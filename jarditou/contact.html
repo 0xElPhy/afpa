@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarditou</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./asset/css/index.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./asset/img/jarditou_logo.jpg" title="Jarditou" alt="logo" width="400">
+        <h1 class="slogan">Tout le jardin</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="bandeau">
+        <img class="promo" src="./asset/img/promotion.jpg" title="Promotion" alt="promo">
+    </section>
+
+    <section class="container">
+        <aside class="colonne_droite">
+            <p>[COLONNE DROITE]</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis dignissimos quaerat maxime iure, minus quia recusandae. Culpa accusamus sequi qui vel doloremque alias mollitia voluptatibus, excepturi ullam, minus numquam?
+            </p>
+        </aside>
+
+        <section class="formulaire">
+            <h2 id="contact">Contact</h2>
+            <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact">
+                <p>* Ces zones sont obligatoires</p>
+                <fieldset>
+                    <legend>Coordonnées</legend>
+                    <label for="nom">Nom* : </label><input type="text" name="nom" id="nom" autofocus required>
+                        <br>
+                    <label for="prénom">Prénom* : </label><input type="text" name="prénom" id="prénom" required>
+                        <br>
+                        <br>
+                    <label for="sexe">Sexe* : </label>
+                        <input type="radio" name="sexe" value="Masculin" id="sexe" required> Masculin
+                        <input type="radio" name="sexe" value="Féminin"> Féminin
+                        <br>
+                        <br>
+                    <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date" required>
+                        <br>
+                    <label for="cp">Code postal* : </label><input type="number" name="cp" id="cp" required>
+                        <br>
+                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse">
+                        <br>
+                    <label for="ville">Ville : </label><input type="text" name="ville" id="ville">
+                        <br>
+                    <label for="email">Email* : </label><input type="email" name="email" id="email" placeholder="david.lopez@afpa.fr">
+                        <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    <label for="sujet">Sujet* : </label>
+                        <select id="sujet" required> 
+                            <option value="">Veuillez sélectionner un sujet</option>
+                            <option value="Mes commandes">Mes commandes</option>
+                            <option value="Question sur un produit">Question sur un produit</option>
+                            <option value="Réclamation">Réclamation</option>
+                            <option value="Autres">Autres</option>
+                        </select>
+                    <br>
+                    <label for="question">Votre question* : </label><textarea name="question" id="question" rows="3" cols="25"></textarea>
+                </fieldset>
+                    <br>
+                <label for="accepte"></label> <input type="checkbox" name="accepte" id="accepte" required> * J'accepte le traitement informatique de ce formulaire
+                    <br>
+                    <br>
+                <button type="submit">Envoyer</button>
+                <button type="reset">Annuler</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#mentions">Mention légales</a></li>
+            <li><a href="#horaires">Horaires</a></li>
+            <li><a href="#plan_site">Plan du site</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

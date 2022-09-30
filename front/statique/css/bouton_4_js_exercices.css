@@ -1,0 +1,17 @@
+.button-70 {
+  background-image: linear-gradient(#0000ff33, #9370db);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #f0f8ff;
+  cursor: pointer;
+  font-family: system-ui,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}

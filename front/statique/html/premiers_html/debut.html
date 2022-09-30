@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Ma première page en HTML 5</title>
+</head>
+<body>
+  <h1>Le HTML 5</h1>
+  <p>Le langage HTML, c'est fantastique.</p> 
+  <img id="photo"
+    class="photo wikimedia" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+    width="384" height="432" alt="Un homme tien un nokia (3310, ou pas) dans sa main">
+  <h2>Ceci est une image
+    <p>D'une main et 
+      <div>d'un 3310</div>
+    </p>
+  </h2>
+  <h3>C'est moins gros</h3>
+  <a href="https://image.shutterstock.com/image-photo/portrait-screaming-clown-isolated-on-600w-245725456.jpg" target="_blank">Clique ici</a>
+  <blockquote><i>Donne un poisson à un homme, <sub>tu le nourrira pour un jour.</sub></i><b> Apprends lui à pêcher et tu le nourrira pour toujours.</b></blockquote>
+  <a href="page2.html">Cliquez ici pour aller vers la page 2</a><br>
+  <a href="mailto:valentin@0xmartel.com?subject=Demande de contact" title="Contactez-moi">Ecrivez-moi</a><br>
+  <a href="#photo" title="Aller à la photo">Aller à la photo qui montre une photo</a><br>
+  <p>Saut de ligne réussi</p>
+
+  <ol> Ceci est une liste ordonnée ...
+    <li>Chaise</li>
+      <ul type="square">
+        <li>Pomme</li> 
+        <li>Poire</li>
+        <li>Pêche</li>
+      </ul>
+    <li>Table</li>
+      <ol type="a">
+        <li>toto</li>
+        <li>truc</li>
+        <li>bidule</li>
+      </ol>
+    <li>Verre</li>
+      <ol type="I">
+        <li>Vertébré</li>
+          <ul type="disc">
+            <li>Vache</li>
+            <li>Cheval</li>
+          </ul>
+        <li>Invertébré</li>
+          <ol type="i">
+            <li>serpent</li>
+            <li>papillon</li>
+          </ol>
+      </ol>
+  </ol>
+
+  <img
+    id="photo"
+    class="photo animalière" src="./img/mouette.jpeg"
+    width="100" height="90" title ="Une mouette" alt="C'est une mouette">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MuFryJD2wTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+  <form action="destination.php" method="post"> 
+    <input type="text" name="nom"> 
+    <input type="text" name="prenom"> 
+    <input type="submit" value="Envoyer"> 
+  </form>
+  <label for="nom">Nom:</label> <input type="text" name="nom" id="nom"><br>
+  <label for="nom">Nom:</label><input type="text" name="nom" id="nom" size="50" maxlength="50" placeholder="Dave LOPER"><br>
+  <textarea name="commentaire" rows="10" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis quis metus ornare semper. In vitae lacus ex. In elementum iaculis malesuada. Maecenas vulputate, erat id molestie dictum, diam dolor faucibus nisl, in pharetra sapien libero eget risus. Morbi vehicula aliquam placerat. Suspendisse mollis tempus dictum. Nullam suscipit nec massa eget viverra. Etiam feugiat facilisis est nec euismod. Quisque convallis, tortor sed placerat lacinia, elit nunc volutpat arcu, vel consequat velit libero at tortor. Suspendisse interdum lacus non felis bibendum facilisis. In sit amet enim mauris.</textarea><br>
+  <input type="checkbox">
+  <input type="radio">
+  <label for="couleur">Choisissez votre couleur</label>
+  <select id="couleur" size="3"> 
+    <option value="">-</option>
+    <option value="Bleu">Bleu</option>
+    <option value="Rouge">Rouge</option>
+    <option value="Vert">Vert</option>
+    <option value="Jaune">Jaune</option>
+    <option value="Blanc">Blanc</option>
+  </select>
+  <label for="nom">Nom :</label><input type="text" name="nom" id="nom"> 
+</body>
+</html>

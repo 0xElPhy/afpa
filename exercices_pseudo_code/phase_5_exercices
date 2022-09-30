@@ -1,0 +1,213 @@
+Exercice 4 – Les boucles
+--
+--
+Exercice 5.1
+
+Variable n En Entier
+Variable C En Booléen
+Début
+	Ecrire "Entrez un nombre compris entre 1 et 3 :"
+	Lire n
+	C <- n<1 ET n>3
+	TantQue	C
+		Ecrire "Recommencez, entrez un nombre compris entre 1 et 3"
+		lire n
+	FinTantQue
+Fin
+--
+--
+Exercice 5.2
+
+Variable n En Entier
+Début
+	Ecrire "Entrez un nombre compris entre 10 et 20 :"
+	TantQue	n<10 ET n>20
+		Lire n
+		Si n>20 alors
+			Ecrire "Plus petit !"
+		SinonSi n<10 alors
+			Ecrire "Plus grand !"
+		FinSi
+	FinTantQue
+	Ecrire "Bravo !"
+Fin
+--
+--
+Exercice 5.3
+
+Variables n, s En Entier
+Début
+	Ecrire "Entrez un nombre :"
+	Lire n
+	s <- 0
+	Ecrire "Les 10 nombres suivants :"
+	Tant que s < 10
+		s <- s + 1 
+		Lire n + 1
+	FinTantQue
+Fin
+--
+--
+Exercice 5.4
+
+Variables n, c, r En Entier
+Début
+	Ecrire "Entrez un nombre :"
+	Lire n
+	Ecrire "Table de " , n , " :"
+	Pour c <- 1 à 10
+		r <- n * c
+		Ecrire n , " x " , c , " = " , r
+	c Suivant
+Fin
+--
+--		
+Exercice 5.5
+
+Variables n, c, i, r En Entier
+Début
+	Ecrire "Entrez un nombre :"
+	Lire n
+	r <- 0
+	Pour c <- 1 à n
+		r <- r + c
+	c Suivant
+	Ecrire "Résultat de la somme de 1 jusqu'à " , n , " = " , r
+Fin
+--
+--
+Exercice 5.6
+
+Variables n, c, i, r En Entier
+Début
+	Ecrire "Entrez un nombre :"
+	Lire n
+	r <- 1
+	Pour c <- 2 à n
+		r <- r * c
+	c Suivant
+	Ecrire "Résultat de " , n , "! = " , r
+Fin
+--
+--
+Exercice 5.7
+
+Variables n, c, g, p En Entier
+Début
+	g <- 0
+	Pour c <- 1 à 20
+	Ecrire "Entrez le nombre numéro " , c , " :"
+		lire n
+		Si n > g
+			g <- n
+			p <- c
+		FinSi
+	c Suivant
+	Ecrire "Le plus grand de ces nombres est :" , g
+	Ecrire "C’était le nombre numéro :" , p
+Fin
+--
+--
+Exercice 5.8
+
+Variables n, c, g, p En Entier
+Début
+	n <- 1
+	c <- 0
+	g <- 0
+	TantQue n != 0
+		Ecrire "Entrez un nombre"
+		lire n
+		c <- c + 1
+		Si n > g
+			g <- n
+			p <- c
+		FinSi
+	FinTantQue
+	Ecrire "Le plus grand de ces nombres est :" , g
+	Ecrire "C’était le nombre numéro :" , p
+Fin
+--
+--
+Exercice 5.9
+
+Variables a, p, r, s, e1, e5, e10 En Entier
+a : montant des achats
+s : somme due
+p : montant payé
+r : reste à payer
+e5 : 5€
+e10 : 10€
+Début
+	a <- 1
+	e5 <- 0
+	e10 <- 0
+	TantQue a != 0
+		Ecrire "Entrez le montant :"
+		Lire a
+		s <- a
+	FinTantQue
+	Ecrire "Vous devez :" , s , "€"
+	Ecrire "Montant payé :"
+	Lire p
+	r <- s - p
+	TantQue	r >= 10
+		e10 <- e10 + 1
+		r <- r - 10
+	FinTantQue
+	Si r >= 5
+		e5 <- 1
+		r <- r - 5
+	FinSi
+	Ecrire "Rendu de la monnaie :"
+	Ecrire "Billets de 10€ :", e10
+	Ecrire "Billets de 5€ :", e5
+	Ecrire "Pièces de 1€ :, reste
+Fin
+--
+--
+Exercice 5.10
+
+VERSION --1.0--
+
+Variables n, p, o, q, s, x, y En Entier
+Début
+	Ecrire "Ecrivez le nombre de chevaux partant"
+	Lire n
+	Ecrire "Ecrivez le nombre de chevaux joués"
+	Lire p
+	o <- 1
+	q <- 1
+	r <- 1
+	Pour s <- 2 à n
+		o <- o * s
+	s suivante
+	Pour s <- 2 à n - p
+		r <- r * s
+	Pour s <- 2 à p
+		q <- q * s
+	s suivante
+	x <- o div r
+	y <- o div ( q * r )
+	Ecrire "Dans l'ordre : une chance sur " , x , "de gagner"
+	Ecrire "Dans le désordre : une chance sur " , y , "de gagner"
+Fin
+
+VERSION --2.0--
+
+Variables n, p, o, q, s En Entier
+Début
+	Ecrire "Ecrivez le nombre de chevaux partant"
+	Lire n
+	Ecrire "Ecrivez le nombre de chevaux joués"
+	Lire p
+	o <- 1
+	q <- 1
+	Pour s <- 1 à p
+		o <- o * (s + n - p)
+		q <- q * s
+	s Suivant
+	Ecrire "Dans l'ordre : une chance sur " , o , "de gagner"
+	Ecrire "Dans le désordre : une chance sur " , o div q , "de gagner"
+Fin
+--

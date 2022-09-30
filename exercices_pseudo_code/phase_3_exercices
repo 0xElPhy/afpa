@@ -1,0 +1,105 @@
+Partie 3 – Les tests
+--
+--
+Exercice 3.1
+-
+VARIABLE nbre EN ENTIER
+Début
+	Ecrire "Entrez un nombre :"
+	Lire nbre
+	Si Nbre < 0 alors
+		Ecrire "Le nombre est négatif"
+	Sinon
+		Ecrire "le nombre est postif"
+	FinSi
+Fin
+--
+--
+Exercice 3.2
+-
+VARIBALES nbre1, nbre2 EN ENTIER 
+Début
+	Ecrire "Entrez deux nombres :"
+	Lire nbre1, nbre2
+	Si (nbre1 > 0 ET nbre 2 > 0) OU (nbre1 < 0 ET nbre 2 < 0) alors
+		Ecrire "Leur produit est positif"
+	Sinon
+		Ecrire "Leur produit est négatif"
+	FinSi
+Fin
+--
+--
+Exercice 3.3
+-
+VARIABLES nom1, nom2, nom3 EN CARACTERE
+Début
+	Ecrire : "Entrez trois noms :"
+	Si nom1 > nom2 ET nom2 > nom3 alors
+		Ecrire "Ces noms sont rangés par ordre alphabétique"
+	Sinon
+		Ecrire "Ces noms sont ne sont pas rangés par ordre alphabétique"
+	FinSi
+Fin
+--
+--
+Exercice 3.4	
+-
+VARIABLE nbre EN ENTIER
+VARIABLES A, B, C EN BOOLEEN
+Début
+	Ecrire "Entrez un nombre :"
+	Lire nbre
+	A <- nbre <0
+	B <- nbre >0
+	Si
+	Si A Alors
+		Ecrire "Le nombre est négatif"
+	SinonSi B alors
+		Ecrire "le nombre est positif"
+	Sinon
+		Ecrire "le nombre est nul"
+	FinSi
+Fin
+--
+--
+Exercice 3.5
+--
+VARIBALES nbre1, nbre2 EN ENTIER
+VARIABLES A, B, C EN BOOLEEN
+Début
+	Ecrire "Entrez deux nombres :"
+	Lire nbre1, nbre2;
+	A <- nbre1 > 0 ET nbre 2 > 0
+	B <- nbre1 < 0 ET nbre 2 < 0
+	C <- nbre1 = 0 ET nbre 2 = 0
+	Si A OU B alors
+		Ecrire "Leur produit est positif"
+	SinonSi C alors
+		Ecrire "Leur produit est nul"
+	Sinon
+		Ecrire "Leur produit est négatif"
+	FinSi
+Fin
+--
+Exercice 3.6
+--
+VARIABLES age EN ENTIER
+VARIABLES A, B, C, D EN BOOLEEN
+Début
+	Ecrire "Entrez l'âge de votre enfant :"
+	Lire age
+	A <- age >= 12
+	B <- age >= 10
+	C <- age >= 8
+	D <- age >= 6
+	Si A alors
+		Ecrire "Catégorie Cadet"
+	SinonSi B alors
+		Ecrire "Catégorie Minime"
+	SinonSi C alors
+		Ecrire "Catégorie Pupille"
+	SinonSi D alors
+		Ecrire "Catégorie Poussin"
+	FinSi
+Fin
+--

@@ -1,0 +1,416 @@
+html, body {
+    font-size: 100%;
+    margin: auto;
+	padding: 0%;
+}
+
+body {  
+    width: fit-content;
+
+    padding-top: 1rem;
+    background-color: #eef1ff;
+
+    border-left: 0.1rem solid #9370db;
+    border-right: 0.1rem solid #9370db;
+    
+    font-family: system-ui, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+input {
+    padding: 5px;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    
+    outline: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    background-color: #9370db;
+
+    font-size: 22.5px;
+    color: #f0f8ff;
+}
+
+/*            */
+/*  SECTIONS  */
+/*            */
+
+.verticale {
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+    /*border: 0.1rem solid #ff0000;*/
+}
+
+.horizontale {
+    overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+    margin: 1rem;
+    padding: 0.2rem;
+    width: 25rem;
+    height: 15rem;
+
+    border: 0.2rem solid #9370db;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/*              */
+/*   PARTIE 5   */
+/*   PARTIE 6   */
+/*   PARTIE 13  */
+/*   PARTIE 14  */
+/*              */
+
+.hor5,
+.hor6,
+.hor13,
+.hor14
+{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*              */
+/*   PARTIE 7   */
+/*              */
+
+.hor7{
+    flex-direction: row;
+}
+
+    .hor7 .d2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 60%;
+        height: 100%;
+        /* border: 0.1rem solid #00ff4c; */
+    }
+    
+/*              */
+/*   PARTIE 8   */
+/*              */
+
+.hor8 {
+    flex-direction: column;
+	background-color: #333;
+
+    border: 0.2rem solid #ddd;
+    box-shadow: 12px 12px 2px 1px rgba(153, 153, 153, 0.6);
+}
+
+    .hor8 .d3{
+        display: flex;
+        align-items: center;
+    }
+
+        .hor8 .d3 h3{
+            margin: 10px;
+
+            color: #999;
+        }
+
+/*              */
+/*   PARTIE 9   */
+/*              */
+
+.hor9 {
+    flex-direction: column;
+}
+    .hor9 h3 {
+        padding: 5px;
+    }
+
+    .hor9 .d1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+        .hor9 .d1 .div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            margin: 1px;
+            padding: 1px;
+            height: 100%;            
+        }
+
+        .hor9 .d1 .div1{
+            min-width: 60%;
+        }
+        .hor9 .d1 .div2{
+            font-size: 14px;
+        }
+
+/*              */
+/*   PARTIE 10  */
+/*              */
+
+.hor10 {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+    .hor10 .inbox{
+        display: flex;
+        flex-direction: column;
+
+        padding: 1rem;
+    }
+    .hor10 .d1{
+        width: 40%;
+    }
+
+        .hor10 .d1 p{
+            margin-top: 1rem;
+            overflow-wrap: break-word;
+        }
+
+    .hor10 .d2{
+        justify-content: space-around;
+
+        width: 60%;
+    }
+
+
+
+/*              */
+/*   PARTIE 15  */
+/*              */
+
+.hor15 {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+    .hor15 .inbox{
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+
+        font-size: medium;
+    }
+
+        .hor15 .inbox .label{
+            height: 100%;
+            margin: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            /* border: 0.1rem solid #ff0000; */
+
+            font-size: 15px;
+
+        }
+
+            .hor15 .inbox .label .input{
+                font-size: 100%;
+                height: 25px;
+            }
+
+            .hor15 .inbox .l2 .input{
+                width: 99px;
+                text-align: center;
+            }
+
+
+
+
+/*              */
+/*  PARTIE  16  */
+/*  FORMULAIRE  */
+/*              */
+
+.hor16 {
+    flex-direction: column;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+    .hor16 h3{
+        margin: 1rem;
+    }
+
+    .hor16 fieldset {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        width: fit-content;
+        border: 0.2rem solid #fff;
+        border-radius: 8px;
+    }
+
+    .vtc4 form h4 {
+        font-size: 20px;
+    }
+        .vtc4 form fieldset input {
+            margin-right: 0.8rem;
+            height: 28.5px;
+        }
+
+
+        .vtc4 .section_form {
+            display: flex;
+            flex-direction: row;
+        
+            margin-bottom: 10px;
+            padding: 0.2rem;
+            width: 100%;
+            min-height: 68px;
+            height: fit-content;
+
+            /* border: 0.2rem solid #ff00aa; */
+        }
+
+            .vtc4 .section_form label{
+                display: block;
+
+                font-weight: bold;
+
+                margin-top: 0.1rem;
+                margin-left: 2rem;
+                margin-right: 0.2rem;
+                padding: 0.1rem;
+                width: 250px;
+                height: fit-content;
+
+                font-size: 20px;
+                /*border: 0.2rem solid #4169E1;*/
+            }
+
+            .vtc4 .section_form .inbox{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                margin: 0.1rem;
+                padding: 0.1rem;
+                width: 300px;
+
+                /*border: 0.2rem solid #41b4e1;*/
+            }
+
+                .vtc4 .section_form .inbox .div1{
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                    .vtc4 .section_form input{
+                        width: 270px;
+                        height: 31.5px;
+
+                        font-size: 100%;
+                    }
+
+                    .vtc4 .section_form .zonetxt{
+                        padding: 5px;
+                        width: 100%;
+                        height: 100%;
+
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        border: 2px solid #ccc;
+                        outline: none;
+
+                        font-family: system-ui, sans-serif;
+                        font-size: 15px;
+                        overflow-y: scroll;
+                        resize: none;
+                    }
+
+                    .vtc4 .section_form legend {
+                        padding-top: 5px;
+                        width: fit-content;
+
+                        font-size: 15px;
+                        color: red;
+                        font-weight: bold;
+                        text-align: start;
+                    }
+
+                    .vtc4 .f8 .d0 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        margin: 0rem;
+                        padding: 0rem;
+                        width: auto;
+                    }
+
+                    .vtc4 .f8 .d0 .f2 #tab_prog{
+                        width: auto;
+                        height: 25px;
+
+                        border: 2px solid #ccc;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        background-color: #fff;
+                        outline: none;
+                        
+                        font-size: 17px;
+                    }
+
+        .section_valider {
+            display: flex;
+            justify-content: center;
+
+            margin: 0.2rem;
+            padding: 0.2rem;
+
+            /* border: 0.2rem solid #41b4e1; */
+        }
+
+            .section_valider #valide {
+                margin-right: 2.5rem;
+            }
+
+@media screen  and (max-width: 1349px) {
+
+    header {
+        text-align: center;
+    }
+
+    .verticale {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

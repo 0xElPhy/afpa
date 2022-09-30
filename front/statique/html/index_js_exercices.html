@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/index_js_exercices.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bouton_1_js_exercices.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bouton_2_js_exercices.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bouton_3_js_exercices.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bouton_4_js_exercices.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bouton_5_js_exercices.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/h1_js_exercices.css">
+    <title>Exercices Javascript</title>
+</head>
+<body>
+    <header>
+        <h1>Exercices  Javascript</h1>
+    </header>
+
+    <section class="verticale vtc1" id="section_1">
+        <section class="horizontale hor5">
+            <h3>Partie 5<br>Afficher du texte</h3>
+            <button class="button-64" id="Id_btn5" role="button"><span class="text">Qui êtes-vous ?</span></button>
+        </section>
+        <section class="horizontale hor6">
+            <h3>Partie 6<br>Les Opérateurs</h3>
+            <button class="button-64" id="Id_btn6" role="button"><span class="text">ABCD</span></button>
+        </section>
+        <section class="horizontale hor7">
+            <div class="inbox d1">
+                <h3>Partie 7<br>Les Conditions</h3>
+            </div>
+            <div class="inbox d2">
+                    <button class="button-85" id="Id_btn7a" role="button">Parité</button>
+                    <button class="button-85" id="Id_btn7b" role="button">Âge</button>
+                    <button class="button-85" id="Id_btn7c" role="button">Calculette</button>
+            </div>
+        </section>
+    </section>
+    <section class="verticale vtc2" id="section_2">
+        <section class="horizontale hor8">
+            <div class="inbox d1">
+                <button class="noselect red" id="Id_btn8a">Saisie</button>
+                <button class="noselect green" id="Id_btn8b">Entiers inf à N</button>
+            </div>
+            <div class="inbox d2">
+                <button class="noselect blue" id="Id_btn8c">Moyenne</button>
+                <button class="noselect purple" id="Id_btn8d">Multiples</button>
+            </div>
+            <div class="inbox d3">
+                <h3>Partie 8</h3>
+                <button class="noselect yellow" id="Id_btn8e">Nbre de voyelles</button>
+                <h3>Les<br>Boucles</h3>
+            </div>
+        </section>
+        <section class="horizontale hor9">
+            <h3>Partie 9<br>Les Fonctions</h3>
+            <div class="inbox d1">
+                <div class="div div1">
+                    <button class="button-85" id="Id_btn9a" role="button">innerHTML</button>
+                    <button class="button-85" id="Id_btn9b" role="button">String Token</button>
+                </div>
+                <div class="div div2">
+                    <span class="image" type="image" id="intégrationImg"></span>
+                    <span class="texte" id="intégrationTxt1"></span>
+                    <span class="texte" id="intégrationTxt2"></span>
+                </div>
+            </div>
+        </section>
+        <section class="horizontale hor10">
+            <div class="inbox d1">
+                <h3>Partie 10<br>Les Tableaux</h3>
+                <p id="iciTab2" hidden></p>
+            </div>
+            <div class="inbox d2">
+                <bouton class="button-70" id="Id_btn10a" role="button" >Exercice 1 :<br>Initialisation Tableau</bouton>
+                <bouton class="button-70" id="Id_btn10b" role="button" >Exercice 2 :<br>Tableau Multifonction</bouton>
+                <bouton class="button-70" id="Id_btn10c" role="button" >Exercice 3 :<br>Tri d'un tableau</bouton>
+            </div>
+        </section>
+    </section>
+
+    <section class="verticale vtc3" id="section_3">
+        <section class="horizontale hor13">
+            <h3>Partie 13<br>Les Objets Natifs</h3>
+            <button class="button-64" id="Id_btn13" role="button"><span class="text">Suite de nombres</span></button>
+        </section>
+        <section class="horizontale hor14">
+            <h3>Partie 14<br>Intégrer du Javascript<br>dans une page web</h3>
+            <a href="./js14_integrer_page_web.html" style="color: #fff"target="_blank">
+                <button class="button-64" id="Id_btn9a" role="button">
+                    <span class="text">Petite intégration</span></button></a>
+        </section>
+        <section class="horizontale hor15">
+            <h3>Partie 15<br>Les Évènements</h3>
+                <div class="inbox d1">
+                    <div class="label l1">
+                        <label class="label-grand l1" for="saisie" id="label1">
+                            Saisissez un texte, puis pressez le bouton 'Contrôle' :</label>
+                        <input class="input" type="text" name="text" id="textBox1" placeholder="Salut !">
+                        <button class="button-70" id="Id_btn15a" role="button" onclick="">Contrôle</button> 
+                    </div>
+                    <div class="label l2">
+                        <label class="label-grand l2" for="saisie" id="label2">
+                            Trouvez le nombre magique entre 1 et 100 :</label>
+                        <input class="input" type="text" id="textBox2">
+                        <button class="button-70" id="Id_btn15b" role="button" onclick="verif(random)">Vérifier</button>
+                        <span id="p15text"></span>
+                    </div>
+                </div>
+        </section>
+    </section>
+
+    <section class="verticale vtc4" name="form_card">
+        <section class="horizontale hor16">
+            <h3 class="">Partie 16<br>Les Formulaires</h3>
+            <form class="formulaire" id="form1">
+                <fieldset>
+                    <h4>Coordonnées</h4>
+                    <p style="color:#f00"><strong>* Ces zones sont obligatoires pour envoyer le formulaire.</strong></p>
+                    <br>
+                    <section class="section_form f1">
+                        <label class="label_f" for="société">Société :</label>
+                        <div class="inbox d1">
+                            <div class="div div1">
+                                <input class="saisie" type="text" id="societe">
+                                <legend class="legend_f">*</legend>
+                            </div>
+                            <legend class="legend_f" id="legende_s" hidden></legend>
+                        </div>
+                    </section>
+                    <section class="section_form f2">
+                        <label class="label_f" for="personne">Personne à contacter :</label>
+                        <div class="inbox d1">
+                            <div class="div div1">
+                            <input class="saisie" type="text" id="personne">
+                            <legend class="legend_f">*</legend>
+                            </div>
+                            <legend class="legend_f" id="legende_p" hidden></legend>
+                        </div>
+                    </section>
+                    <section class="section_form f3">
+                        <label class="label_f" id="txt_adresse" for="adresse">Adresse de l'entreprise :</label>
+                        <div class="inbox d1">
+                            <textarea class="zonetxt" id="txt_area_1" name="adresse_ent" rows="3" cols="25"></textarea>
+                        </div>
+                    </section>
+                    <section class="section_form f4">
+                        <label class="label_f" for="code_postal">Code Postal :</label>
+                        <div class="inbox d1">
+                            <div class="div div1">
+                                <input class="saisie" type="text" id="cp" maxlength="5">
+                                <legend class="legend_f">*</legend>
+                            </div>
+                            <legend class="legend_f" id="legende_cp" hidden></legend>
+                        </div>
+                    </section>
+                    <section class="section_form f5">
+                        <label class="label_f" for="ville">Ville :</label>
+                        <div class="inbox d1">
+                            <div class="div div1">
+                                <input class="saisie" type="text" id="ville">
+                                <legend class="legend_f">*</legend>
+                            </div>
+                            <legend class="legend_f" id="legende_v" hidden></legend>
+                        </div>
+                    </section>
+                    <section class="section_form f6">
+                        <label class="label_f" for="email">E-mail :</label>
+                        <div class="inbox d1">
+                            <div class="div div1">
+                                <input class="saisie" type="text" id="email">
+                                <legend class="legend_f">*</legend>
+                            </div>
+                            <legend class="legend_f" id="legende_e" hidden></legend>
+                        </div>
+                    </section>
+                    <section class="section_form f7">
+                        <label class="label_f" for="télephone">Téléphone :</label>
+                        <div class="inbox d1">
+                            <div class="div div1">
+                                <input class="saisie" type="text" id="tel">
+                            </div>
+                            <legend class="legend_f" id="legende_t" hidden></legend>
+                        </div>
+                    </section>
+                    <section class="section_form f8">
+                        <div class ="inbox d0">
+                            <label class="label_f f1" id="txt_prog" for="projet">Sélectionnez<br>l'environnement<br> technique du projet :</label>
+                            <label class="label_f f2">
+                                <select id="tab_prog"> 
+                                    <option value="">Choisissez</option>
+                                    <option value="Access">Access</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Delphi">Delphi</option>
+                                    <option value="Windev">Windev</option>
+                                    <option value="Visual Basic">Visual Basic</option>
+                                    <option value="Power Builder">Power Builder</option>
+                                    <option value="Internet">Internet</option>
+                                    <option value="Intranet">Intranet</option>
+                                    <option value="Windows NT">Windows NT</option>
+                                    <option value="Unix">Unix</option>
+                                    <option value="SQL Server">SQL Server</option>
+                                    <option value="Oracle">Oracle</option>
+                                    <option value="Autres...">Autres...</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="inbox d1">
+                            <textarea class="zonetxt" id="txt_area_2" rows="3" cols="25" readonly></textarea>
+                        </div>
+                    </section>
+                </fieldset>
+                <section class="section_valider">
+                    <button class="button-62" id="valide" type="button">Envoyer</button>
+                    <button class="button-62" id="annule" role="button" type="reset">Effacer</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <div>Valentin Martel</div>
+        <div>AFPA Amiens | TBDA | Septembre 2022</div>
+    </footer>
+
+    <script src="../../dynamique/javascript/js05_texte.js"></script>
+    <script src="../../dynamique/javascript/js06_operateurs.js"></script>
+    <script src="../../dynamique/javascript/js07_conditions.js"></script>
+    <script src="../../dynamique/javascript/js08_boucles.js"></script>
+    <script src="../../dynamique/javascript/js09_fonctions.js"></script>
+    <script src="../../dynamique/javascript/js10_tableaux.js"></script>
+    <script src="../../dynamique/javascript/js13_objets_natifs.js"></script>
+    <script src="../../dynamique/javascript/js15_evenements.js"></script>
+    <script src="../../dynamique/javascript/js16_formulaires.js"></script>
+
+</body>
+</html>
